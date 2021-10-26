@@ -6,7 +6,7 @@ if [[ $1 == *"$GITHUB_REPOSITORY"* ]]; then
   echo "Upstream = $1"
   echo "Current Repo = $GITHUB_REPOSITORY"
   echo "Hello, this is self. We are currently on origin, so exiting"
-  # exit 0
+  exit 0
 fi
 
 if [[ -z "$GITHUB_TOKEN" ]]; then
