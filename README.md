@@ -16,12 +16,15 @@ A GitHub Action for syncing the current repository using **force push**.
 
 ## Usage
 
-Create a Personal Access Token at your Github account settings ( [link](https://github.com/settings/tokens?type=beta) ) and add to the synced repository's secret as `PAT`.  
+### Setting up Access Token 
+Create a Personal Access Token at your Github account settings ( [link](https://github.com/settings/tokens?type=beta) ).
 
 The Personal Access Token has to have permission over both repositories being synced, and it has to have the following permissions:  
 
 * Contents: Read and write
 * Metadata: Read only  
+
+Finally, go to the synced repo, `Settings -> Secrets and variables -> Actions` and add a new secret called `PAT`. 
 
 ### GitHub Actions
 ```
