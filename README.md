@@ -22,6 +22,7 @@ Create a Personal Access Token at your Github account settings ( [link](https://
 The Personal Access Token has to have permission over both repositories being synced, and it has to have the following permissions:  
 
 * Contents: Read and write
+* Workflows: Read and write
 * Metadata: Read only  
 
 Finally, go to the synced repo, `Settings -> Secrets and variables -> Actions` and add a new secret called `PAT`. 
